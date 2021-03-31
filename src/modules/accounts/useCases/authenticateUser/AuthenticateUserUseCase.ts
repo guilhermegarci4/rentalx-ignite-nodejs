@@ -2,7 +2,7 @@ import { compare } from "bcrypt";
 import { inject, injectable } from "tsyringe";
 import { sign } from "jsonwebtoken";
 
-import { IUsersRepository } from "../../../../accounts/repositories/IUsersRepository";
+import { IUsersRepository } from "../../repositories/IUsersRepository";
 
 
 interface IRequest {
