@@ -9,17 +9,11 @@ export class CreateUsers1617142925830 implements MigrationInterface {
                 columns: [
                     {
                         name: "id",
-                        type: "uuid",
-                        isPrimary: true,
+                        type: "uuid"
                     },
                     {
                         name: "name",
                         type: "varchar"
-                    },
-                    {
-                        name: "username",
-                        type: "varchar",
-                        isUnique: true
                     },
                     {
                         name: "password",
@@ -42,10 +36,10 @@ export class CreateUsers1617142925830 implements MigrationInterface {
                         name: "created_at",
                         type: "timestamp",
                         default: "now()"
-                    },
-                ],
-            }),
-        );
+                    }
+                ]
+            })
+        )
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
