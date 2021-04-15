@@ -36,6 +36,10 @@ class User {
         if (!this.isAdmin) {
             this.isAdmin = false;
         }
+
+        if(!this.avatar) {
+            this.avatar = 'null';
+        }
     }
 }
 
