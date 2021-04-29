@@ -11,7 +11,7 @@ import { AppError } from "@shared/errors/AppError";
 import { router } from './routes';
 import swaggerFile from "../../../swagger.json";
 
-createConnection("172.20.0.3");
+createConnection("172.18.0.2");
 const app = express();
 
 app.use(express.json());
