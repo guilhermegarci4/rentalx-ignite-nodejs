@@ -7,7 +7,7 @@ import { hash } from "bcrypt";
 
 interface IRequest {
     token: string,
-    password, string
+    password: string
 }
 
 @injectable()
