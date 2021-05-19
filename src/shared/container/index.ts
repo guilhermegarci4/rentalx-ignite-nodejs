@@ -56,13 +56,3 @@ container.registerSingleton<IUsersTokensRepository>(
     "UsersTokensRepository",
     UsersTokensRepository
 );
-
-const diskStorage = {
-    local: LocalStorageProvider,
-    s3: S3StorageProvider
-}
-
-container.registerSingleton<IStorageProvider>(
-    "StorageProvider",
-    diskStorage[process.env.disk]
-); 
