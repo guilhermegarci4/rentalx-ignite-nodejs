@@ -13,7 +13,7 @@ import swaggerFile from "../../../swagger.json";
 import upload from "@config/upload";
 import { createConnection } from "typeorm";
 
-createConnection("172.18.0.2");
+createConnection("localhost");
 const app = express();
 
 app.use(express.json());
