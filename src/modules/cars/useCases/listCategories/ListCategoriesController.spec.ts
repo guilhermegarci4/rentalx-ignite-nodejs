@@ -1,11 +1,10 @@
 import request from "supertest";
 import { v4 as uuid } from "uuid";
 import { hash } from "bcrypt";
-import { Connection } from "typeorm";
+import { Connection, createConnection } from "typeorm";
 
 import { app } from "@shared/infra/http/app";
 
-import createConnection from "@shared/infra/typeorm";
 
 let connection: Connection;
 

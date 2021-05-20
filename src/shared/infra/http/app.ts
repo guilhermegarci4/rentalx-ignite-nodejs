@@ -4,7 +4,6 @@ import express, { NextFunction, Request, Response} from 'express';
 import "express-async-errors";
 import swaggerUi from "swagger-ui-express";
 
-import createConnection from "@shared/infra/typeorm";
 
 import "@shared/container";
 
@@ -12,6 +11,7 @@ import { AppError } from "@shared/errors/AppError";
 import { router } from './routes';
 import swaggerFile from "../../../swagger.json";
 import upload from "@config/upload";
+import { createConnection } from "typeorm";
 
 createConnection("172.18.0.2");
 const app = express();
